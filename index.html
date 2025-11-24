@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Moonlit Haven</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #a3bfc4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* CARD BOX */
+    .card {
+      max-width: 420px;
+      width: 100%;
+      background: #9bc2ce;
+      padding: 20px;
+      border-radius: 18px;
+      box-shadow: 0px 4px 14px rgba(0,0,0,0.18);
+      text-align: center;
+      border: 2px solid #d2e3e6;
+    }
+
+    /* FLEX header container */
+    .header-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      width: 70px;
+      height: 70px;
+      border-radius: 100px;
+    }
+
+    h1 {
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: #182534;
+      margin: 0;
+      text-align: left;
+    }
+
+    p.description {
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.5;
+      color: #333;
+      margin-top: 22px;
+    }
+
+    /* FB BUTTON */
+    .fb-button {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 12px 20px;
+      background: #182534;
+      border-radius: 12px;
+      text-decoration: none;
+
+      /* Glow */
+      box-shadow: 0 0 12px rgba(24, 37, 52, 0.7), 
+                  0 0 25px rgba(24, 37, 52, 0.55);
+
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+      color: white;
+      font-weight: 600;
+      font-size: 1rem;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    /* Hover (PC) */
+    .fb-button:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 20px rgba(24, 37, 52, 0.9),
+                  0 0 35px rgba(24, 37, 52, 0.8);
+    }
+
+    /* Press (Phone) */
+    .fb-button:active {
+      transform: scale(1.18);
+      box-shadow: 0 0 30px rgba(24, 37, 52, 1),
+                  0 0 45px rgba(24, 37, 52, 0.9);
+    }
+
+    .fb-logo {
+      width: 28px;
+      height: 28px;
+      object-fit: contain;
+      transition: transform 0.15s ease;
+    }
+
+    .fb-button:active .fb-logo {
+      transform: scale(1.35);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+
+    <!-- NEW HEADER: Logo + Name side by side -->
+    <div class="header-row">
+      <img class="logo" src="buff_del.jpg" alt="Business Logo">
+      <h1>Moonlit Haven</h1>
+    </div>
+
+    <!-- FACEBOOK BUTTON -->
+    <a class="fb-button"
+       href="https://www.facebook.com/people/Moonlit-Haven/61575783420893/"
+       target="_blank"
+       rel="noopener noreferrer">
+        Visit us on Facebook
+        <img src="image.png" class="fb-logo" alt="Facebook Logo">
+    </a>
+
+    <p class="description">
+      Moonlit Haven is your cozy corner for handcrafted gifts, and curated pieces that bring warmth and charm to you.
+    </p>
+
+  </div>
+</body>
+</html>

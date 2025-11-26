@@ -58,10 +58,11 @@
       line-height: 1.5;
       color: #333;
       margin-top: 22px;
+      margin-bottom: 24px;
     }
 
-    /* FB BUTTON */
-    .fb-button {
+    /* GLOW BUTTON STYLE (shared by both buttons) */
+    .glow-button {
       display: inline-flex;
       justify-content: center;
       align-items: center;
@@ -84,14 +85,14 @@
     }
 
     /* Hover (PC) */
-    .fb-button:hover {
+    .glow-button:hover {
       transform: scale(1.08);
       box-shadow: 0 0 20px rgba(24, 37, 52, 0.9),
                   0 0 35px rgba(24, 37, 52, 0.8);
     }
 
     /* Press (Phone) */
-    .fb-button:active {
+    .glow-button:active {
       transform: scale(1.18);
       box-shadow: 0 0 30px rgba(24, 37, 52, 1),
                   0 0 45px rgba(24, 37, 52, 0.9);
@@ -104,7 +105,7 @@
       transition: transform 0.15s ease;
     }
 
-    .fb-button:active .fb-logo {
+    .glow-button:active .fb-logo {
       transform: scale(1.35);
     }
   </style>
@@ -120,7 +121,7 @@
     </div>
 
     <!-- FACEBOOK BUTTON -->
-    <a class="fb-button"
+    <a class="glow-button"
        href="https://www.facebook.com/people/Moonlit-Haven/61575783420893/"
        target="_blank"
        rel="noopener noreferrer">
@@ -129,8 +130,16 @@
     </a>
 
     <p class="description">
-      Moonlit Haven is your cozy corner for handcrafted gifts, and curated pieces that bring warmth and charm to you.
+      Moonlit Haven is your cozy corner for handcrafted gifts and curated pieces that bring warmth and charm to you.
     </p>
+
+    <!-- WEBSITE BUTTON (NEW) -->
+    <a class="glow-button"
+       href="https://github.com/Tahmid-Faheem/MoonlitHaven"
+       target="_blank"
+       rel="noopener noreferrer">
+        Our Website
+    </a>
 
   </div>
 </body>
